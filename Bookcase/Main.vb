@@ -36,10 +36,35 @@ Public Class Main
         Dim buycounter As Integer = Directory.GetFiles(Application.StartupPath.ToString & "\Buy", "*.bcd", SearchOption.AllDirectories).Length
         BookList.Text = "Books to Buy" & " - " & buycounter.ToString()
         For Each i As String In Directory.GetFiles(Application.StartupPath.ToString & "\Buy")
-            BookList.ListView1.Items.Add(Path.GetFileName(i))
             My.Settings.ListBook = Application.StartupPath.ToString & "\Buy"
         Next
+        Dim folderinfo As New IO.DirectoryInfo(My.Settings.ListBook)
+        Dim arrFilesinfolder() As IO.FileInfo
+        Dim fileinfolder As IO.FileInfo
 
+        arrFilesinfolder = folderinfo.GetFiles("*.bcd")
+        For Each fileinfolder In arrFilesinfolder
+            BookList.ListView1.Items.Add(fileinfolder.Name)
+        Next
         BookList.ShowDialog()
+
+    End Sub
+
+    Private Sub ListBooksToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListBooksToolStripMenuItem.Click
+        Dim libcounter As Integer = Directory.GetFiles(My.Settings.Library, "*.bcd", SearchOption.AllDirectories).Length
+        BookList.Text = "Books in library" & " - " & libcounter.ToString()
+        For Each i As String In Directory.GetFiles(My.Settings.Library)
+            My.Settings.ListBook = My.Settings.Library
+        Next
+        Dim folderinfo As New IO.DirectoryInfo(My.Settings.Library)
+        Dim arrFilesinfolder() As IO.FileInfo
+        Dim fileinfolder As IO.FileInfo
+
+        arrFilesinfolder = folderinfo.GetFiles("*.bcd")
+        For Each fileinfolder In arrFilesinfolder
+            BookList.ListView1.Items.Add(fileinfolder.Name)
+        Next
+        BookList.ShowDialog()
+
     End Sub
 End Class

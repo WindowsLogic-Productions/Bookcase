@@ -36,7 +36,6 @@ Partial Class BookList
         Me.ListView1.Size = New System.Drawing.Size(454, 273)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
-        Me.ListView1.View = System.Windows.Forms.View.Details
         '
         'ColumnHeader1
         '
