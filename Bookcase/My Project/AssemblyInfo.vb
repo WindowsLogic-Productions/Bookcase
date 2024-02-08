@@ -8,12 +8,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("Bookcase")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("Bookcase")>
-<Assembly: AssemblyCopyright("Copyright ©  2023")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyTitle("Book Case")>
+<Assembly: AssemblyDescription("An application for organising and refering back to books you've read.")>
+<Assembly: AssemblyCompany("WindowsLogic Productions")>
+<Assembly: AssemblyProduct("Book Case")>
+<Assembly: AssemblyCopyright("Copyright © 2023 WindowsLogic Productions")>
+<Assembly: AssemblyTrademark("Book Case")>
 
 <Assembly: ComVisible(False)>
 

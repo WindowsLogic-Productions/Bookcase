@@ -1,11 +1,13 @@
-J:\Projects\Bookcase\Bookcase\bin\Debug\Bookcase.exe.config
-J:\Projects\Bookcase\Bookcase\bin\Debug\Bookcase.exe
-J:\Projects\Bookcase\Bookcase\bin\Debug\Bookcase.pdb
-J:\Projects\Bookcase\Bookcase\bin\Debug\Bookcase.xml
 J:\Projects\Bookcase\Bookcase\obj\Debug\Bookcase.vbprojResolveAssemblyReference.cache
 J:\Projects\Bookcase\Bookcase\obj\Debug\Bookcase.Main.resources
 J:\Projects\Bookcase\Bookcase\obj\Debug\Bookcase.Resources.resources
 J:\Projects\Bookcase\Bookcase\obj\Debug\Bookcase.vbproj.GenerateResource.Cache
-J:\Projects\Bookcase\Bookcase\obj\Debug\Bookcase.exe
-J:\Projects\Bookcase\Bookcase\obj\Debug\Bookcase.xml
-J:\Projects\Bookcase\Bookcase\obj\Debug\Bookcase.pdb
+J:\Projects\Bookcase\Bookcase\bin\Debug\Book Case.exe.config
+J:\Projects\Bookcase\Bookcase\bin\Debug\Book Case.exe
+J:\Projects\Bookcase\Bookcase\bin\Debug\Book Case.pdb
+J:\Projects\Bookcase\Bookcase\bin\Debug\Book Case.xml
+J:\Projects\Bookcase\Bookcase\obj\Debug\Book Case.exe
+J:\Projects\Bookcase\Bookcase\obj\Debug\Book Case.xml
+J:\Projects\Bookcase\Bookcase\obj\Debug\Book Case.pdb
+J:\Projects\Bookcase\Bookcase\obj\Debug\Bookcase.BookList.resources
+J:\Projects\Bookcase\Bookcase\obj\Debug\Bookcase.EditBook.resources

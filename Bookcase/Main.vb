@@ -23,7 +23,23 @@ Public Class Main
             System.IO.Directory.CreateDirectory(Application.StartupPath.ToString & "\Loan")
         End If
 
-        Dim counter As Integer = Directory.GetFiles(Application.StartupPath.ToString, "*.bcd", SearchOption.AllDirectories).Length
-        Me.Text = "Book Case" & " - " & counter.ToString() & " Books"
+        If My.Settings.Library = Application.StartupPath.ToString & "\Classics" Then
+            Dim counter As Integer = Directory.GetFiles(My.Settings.Library, "*.bcd", SearchOption.AllDirectories).Length
+            Me.Text = "Book Case" & " - " & counter.ToString() & " Books / Library: Classics"
+        ElseIf Application.StartupPath.ToString & "\Contemporary Classics" Then
+            Dim counter As Integer = Directory.GetFiles(My.Settings.Library, "*.bcd", SearchOption.AllDirectories).Length
+            Me.Text = "Book Case" & " - " & counter.ToString() & " Books / Library: Contemporary Classics"
+        End If
+    End Sub
+
+    Private Sub BooksToBuyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BooksToBuyToolStripMenuItem.Click
+        Dim buycounter As Integer = Directory.GetFiles(Application.StartupPath.ToString & "\Buy", "*.bcd", SearchOption.AllDirectories).Length
+        BookList.Text = "Books to Buy" & " - " & buycounter.ToString()
+        For Each i As String In Directory.GetFiles(Application.StartupPath.ToString & "\Buy")
+            BookList.ListView1.Items.Add(Path.GetFileName(i))
+            My.Settings.ListBook = Application.StartupPath.ToString & "\Buy"
+        Next
+
+        BookList.ShowDialog()
     End Sub
 End Class
